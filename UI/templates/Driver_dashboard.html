@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script  type="text/javascript" src="../javascript/ride_request.js"></script>
+</head>
+
+<body>
+    <script>getRideRequests();</script>
+    <div class="landing">
+        <div class="topnav">
+            <a  href="../../index.html">Home</a>
+            <a class="active" href="Driver_dashboard.html">Passenger Requests</a>
+            <a href="driver_make_ride_offers.html">Create a  Ride Offers</a>
+            <a href="Driver_accounts.html">Driver Login</a>
+            <a href="../../index.html">Logout</a>
+        </div>
+        <div class="admin-view">
+            Passenger Requests
+            <hr/>
+            <div class="card" id="requests_card">
+               
+            </div>
+            <br>
+        </div>
+    </div>
+   
+    
+</body>
+
+</html>

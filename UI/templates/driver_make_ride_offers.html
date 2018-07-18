@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/dashboard.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/rideoffer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="landing">
+        <div class="topnav">
+            <a href="../../index.html">Home</a>
+            <a href="Driver_dashboard.html">Passenger Requests</a>
+            <a class="active" href="driver_make_ride_offers.html">Create a Ride Offer</a>
+            <a href="Driver_accounts.html">Driver Login</a>
+            <a href="../../index.html">Logout</a>
+        </div>
+
+        <center>
+
+
+
+            <form class="ride-offer-content" id="c_ride_offer_form">
+                <div class="container">
+                    <h2>Create a Ride Offer.</h2>
+                    <hr/>
+
+                    <label for="ride_offer_name">
+                        <b>Enter Ride Offer Name :</b>
+                    </label>
+                    <input type="text" placeholder="Ride Offer Name " name="email" id="offername" required>
+
+                    <label for="percentage_ride_offer">
+                        <b>Enter Ride offer price</b>
+                    </label>
+                    <input type="text" placeholder="Ride Price" name="psw" id="price" required>
+
+                    <label for="percentage_ride_offer">
+                        <b>Enter Ride offer Details</b>
+                    </label>
+                    <input type="text" class="details-ride-offer-textfield" name="psw" placeholder="Ride offer Details" id="details" required>
+
+                    <a>
+                        <button type="submit" class="btn">Create a ride offer</button>
+                    </a>
+                </div>
+            </form>
+        </center>
+    </div>
+    <script type="text/javascript" src="../javascript/create_ride_offer.js"></script>
+</body>
+
+</html>

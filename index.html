@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ride-My-Way</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./UI/css/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./UI/css/signup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+
+<body>
+
+  
+
+
+    <div class="landing">
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About Us</a>
+        </div>
+        <table class="table-right">
+            <td>
+                <div class="signup-block">
+                    <form class="admin-modal-content" id="formsignup">
+                        <div class="container">
+                            <h4>Sign Up</h4>
+                            <p>Please fill in this form to create an account.</p>
+                            <hr>
+                            <label for="email">
+                                <b>Email</b>
+                            </label>
+                            <input type="email" id="email" placeholder="you@example.com" required>
+
+                            <label for="email">
+                                <b>Select an Option</b>
+                            </label>
+                            <p>
+                                <input class="w3-radio" type="radio" id="driver" value="male" checked>
+                                <label>Driver</label>
+                            </p>
+                            <p>
+                                <input class="w3-radio" type="radio" id="passenger" value="female">
+                                <label>Passenger</label>
+                            </p>
+
+                            <label for="psw">
+                                <b>Password</b>
+                            </label>
+                            <input type="password" placeholder="Enter Password" id="psw" required>
+
+                            <label for="psw-repeat">
+                                <b>Repeat Password</b>
+                            </label>
+                            <input type="password" placeholder="Repeat Password" id="psw-repeat" required>
+                            <div class="clearfix">
+                                <button type="submit" class="btn">Sign Up</button>
+                            </div>
+                    </form>
+                    </div>
+            </td>
+            <td>
+                <div class="intro">
+                    <b>Tuvuge</b> is a carpooling application that provides drivers with the ability to create ride oﬀers  and
+                    passengers to join available ride oﬀers.
+                </div>
+                <div class="my-buttons">
+                    <a a href="UI/templates/Driver_accounts.html">
+                        <button type="button" id="btn-one">
+                            <i class="fa fa-user"></i>
+                            <b>
+                                <div class="driver-color">SIGNIN AS A DRIVER</div>
+                            </b>
+                        </button>
+                    </a>
+                    <a a href="UI/templates/Passenger_accounts.html">
+                        <button type="button" id="btn-two">
+                            <i class="fa fa-smile-o"></i>
+                            <b>
+                                <div class="driver-color">SIGNIN AS A PASSENGER</div>
+                            </b>
+                        </button>
+                    </a>
+                </div>
+            </td>
+            </div>
+    </div>
+    </table>
+
+    <div class="footer">
+        <center>
+
+
+            <b>Tuvuge</b> © 2017.
+            <br> Developed by
+            <i>Lutaaya Huzaifah Idris</i>
+        </center>
+    </div>
+    </div>
+    <script type="text/javascript" src="./UI/javascript/signup.js"></script>
+</body>

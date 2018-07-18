@@ -1,0 +1,224 @@
+.landing{
+    background-color: #979B8D;
+    height: 600px;
+    align-content: center;
+    margin: 0 auto;
+}
+.circular-image {
+    border-radius:  50%;
+    float: right;
+    width:240px;
+    height: 270px;
+  }
+  #name{
+      display:block;
+      margin-right: 0px;
+      float: right;
+      margin-top: 0px;
+      text-align: center;
+      padding-top: 10px;
+      background-color: rgba(233, 225, 202, 0.794);
+      width:120px;
+      height: 30px;
+      border-radius: 20px
+  }
+#buttons{
+    float: right;
+    margin-top: 200px;
+    
+}
+#btn-one{
+    background-color:  #214E34;
+    border-color: #fff;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+}
+#btn-one:hover{
+    background-color: #C1BCAC;
+}
+#btn-two{
+    background-color: #214E34;
+    border-color: #fff;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+}
+#btn-two:hover{
+    background-color: #C1BCAC;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #214E34;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(153, 134, 98);
+  }
+  
+  .topnav a.active {
+    background-color:#5C7457;
+    color: white;
+  }
+  .intro{
+      display:block;
+      text-align: left;
+      margin-bottom: 30px;
+      margin-right: 280px;
+      float: right;
+      padding: 10px;
+      justify-content: center;
+      padding: 10px;
+      background-color: #C1BCAC;
+      width:450px;
+      color: #214E34;
+      height: 110px;
+      border-radius: 20px;
+      font-size: 120%;
+  }
+
+  .driver-title{
+      color:#EC4026;
+  }
+
+  .no-of-drives{
+      color:#1BCD21;
+  }
+
+  .names-of-users{
+      color: orange;
+  }
+
+  .card-titles{
+      color: green;
+  }
+  
+  #card-text-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+  #leftThing {
+    width: 25%;
+    color: green;
+  }
+  #content {
+    width: 50%;
+    background-color: green;
+  }
+  #rightThing {
+    width: 25%;
+    background-color: yellow;
+  }
+
+  .footer {
+    position:fixed;
+    bottom:0;
+    left:50%;
+    margin-left:-200px; /*negative half the width */
+    width:400px;
+    height:80px;
+
+  }
+.driver-color{
+    color: #f2f2f2
+
+}
+
+.my-buttons{
+    
+    float: right;
+    margin-bottom: 100px;
+    margin-right: 283px;
+
+
+}
+
+.my-buttons2{
+    
+    float: left;
+  
+    
+
+
+}
+.admin-modal-content {
+    background-color: #fefefe;
+    margin: 2% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    float: right;
+    width:400px;
+    margin-right: 150px;
+}
+.my-desc-text{
+vertical-align: middle;
+
+}
+
+.content-hor{
+    display: inline-block;
+    /*text-align: left;*/
+}
+.row{
+    margin-top: 20px;
+    float: left;
+    clear: none;
+}
+
+.column-them{
+    vertical-align:top;
+    display:inline-block;
+    width:100px;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+.vert-content{
+
+    width:550px;
+    vertical-align:top;
+}
+/*new */
+
+main {
+   
+    margin: 20px 0;
+    padding: 10px;
+  }
+  
+  main div {
+   
+    margin: 0 auto;
+    padding: 15px;
+    margin: 5px auto;
+  }
+  
+  main div:nth-child(1) {
+    width: 500px;
+  }
+  main div:nth-child(2) {
+    width: 700px;
+  }
+  main div:nth-child(3) {
+    width: 225px;
+  }
+.table-right{
+    float: right;
+    width:100%;
+    height: 100px;
+}
+
+.index-buttons{
+    margin-left:  400px;
+
+}

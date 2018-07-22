@@ -10,6 +10,7 @@ document.getElementById('formsignup').addEventListener('submit',signUp)
                 fetch('https://tuvuge-app.herokuapp.com/api/v1/signup',
                     {
                         method: 'POST',
+                        cache: 'no-cache',
                         headers: {
                             'Accept': 'application/json,text/plain,*/*',
                             'Content-type': 'application/json'
@@ -32,7 +33,6 @@ document.getElementById('formsignup').addEventListener('submit',signUp)
                             alert("You have successfully registered.");
                         }
                     })
-                    //.then((res) => console.log(res.json()))
-                    //.then((data) => console.log(data))
+          
     
             }    

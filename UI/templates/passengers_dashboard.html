@@ -25,7 +25,7 @@
     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn">Request for a Drive</button>
 
     <div id="id01" class="modal">
-      <form class="modal-content" action="/action_page.php">
+      <form class="modal-content" id="promoform">
         <div class="container">
           <h1>Request a Ride</h1>
           <p>Search using a PROMO Ride Offer Number.</p>
@@ -36,7 +36,7 @@
           <input type="text" placeholder="Enter the PROMO key for the ride e.g 2" name="title" id="promo_key" required>
 
           <div class="clearfix">
-            <button type="submit" class="btn">Search for a Ride </button>
+            <button type="submit" class="btn" id="getSingleRide">Search for a Ride </button>
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel Search</button>
           </div>
         </div>
@@ -59,9 +59,10 @@
       <hr/>
       <div class="card" id="single_ride_req">
 
-
       </div>
     </div>
+    <script  type="text/javascript" src="../javascript/get_single_ride.js"></script>
 </body>
+
 
 </html>

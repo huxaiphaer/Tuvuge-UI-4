@@ -10,6 +10,7 @@ document.getElementById('c_ride_offer_form').addEventListener('submit',create_ri
                 fetch('https://tuvuge-app.herokuapp.com/api/v1/users/rides',
                     {
                         method: 'POST',
+                        cache: 'no-cache',
                         headers: {
                             'Accept': 'application/json,text/plain,*/*',
                             'Content-type': 'application/json',

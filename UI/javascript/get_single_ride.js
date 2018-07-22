@@ -1,9 +1,13 @@
-function getSingleRide() {
+document.getElementById('getSingleRide').addEventListener
+    ('click', getSingleRide);
 
+function getSingleRide() {
+    
     let id = document.getElementById('promo_key').value;
     fetch('https://tuvuge-app.herokuapp.com/api/v1/rides/' + id,
         {
             method: 'GET',
+            cache: 'no-cache',
             headers: {
                 'Accept': 'application/json,text/plain,*/*',
                 'Content-type': 'application/json',

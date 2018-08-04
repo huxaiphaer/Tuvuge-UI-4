@@ -19,6 +19,7 @@ function getSingleRide() {
                 alert("Your session has expired. Try logging in again");
                 window.location.href = "Passenger_accounts.html";
             }
+            console.log(res.json())
             return res.json();
         })
 

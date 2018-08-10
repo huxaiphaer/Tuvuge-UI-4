@@ -20,7 +20,8 @@ function getPosts() {
             let output = '';
             obj.forEach(function (post) {
                 output += `
-                <div class="container">
+                <div class="card">
+                    <div class="container">
                         <h4>
                             <b class="names-of-users">${post.name}</b>
                         </h4>
@@ -31,6 +32,8 @@ function getPosts() {
                         <hr/>
                         
                     </div>
+                </div>
+                    <br>
                 `;
             });
             document.getElementById('ride_offers_card').innerHTML = output;

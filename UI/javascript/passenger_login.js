@@ -1,7 +1,12 @@
 document.getElementById('passenger_login').addEventListener('submit', login)
+//turn off the loader.
+document.getElementById("loader").style.visibility = "hidden";
 
 function login(e) {
     e.preventDefault();
+
+    //turn on the loader.
+    document.getElementById("loader").style.visibility = "visible";
 
     let username = document.getElementById('p_uname').value;
     let password = document.getElementById('p_psw').value;
@@ -20,18 +25,27 @@ function login(e) {
             })
 
         }).then(res => {
+
+            try{
             if (res.status == '200') {
                 console.log(res.status)
+                document.getElementById("loader").style.visibility = "hidden"
                 alert("You have successfully logged in. ");
                 window.location.href = "passengers_dashboard.html";
             }
             
              else 
              {
+                document.getElementById("loader").style.visibility = "hidden"
                 console.log(res.status)
                 alert("Sorry please, invalid username or password.");
 
             }
+        }
+        catch(e){
+            document.getElementById("loader").style.visibility = "hidden"
+            alert("Sorry please, check your connection.");
+        }
             return res.json();
         })
         .then(res => {

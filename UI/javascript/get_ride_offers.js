@@ -1,4 +1,8 @@
+document.getElementById("loader").style.visibility = "visible";
 function getPosts() {
+    //turn on the loader.
+  
+
     fetch('https://tuvuge-app.herokuapp.com/api/v1/users/rides',
         {
             method: 'GET',
@@ -13,6 +17,7 @@ function getPosts() {
             return res.json();
         })
         .then((res) => {
+            document.getElementById("loader").style.visibility = "hidden";
             var jdata = "" + res.ride_offers;
             var str = "" + jdata.replace(/'/g, "\"");
             obj = JSON.parse(str);

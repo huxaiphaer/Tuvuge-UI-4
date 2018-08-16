@@ -2,7 +2,6 @@ document.getElementById('formsignup').addEventListener('submit',signUp)
 
             function signUp(e) {
                 e.preventDefault();
-    
                 let username = document.getElementById('email').value;
                 let email = document.getElementById('email').value;
                 let password = document.getElementById('psw').value;

@@ -1,8 +1,9 @@
-document.getElementById('getSingleRide').addEventListener
+document.getElementById('getSingleRide_bt').addEventListener
     ('click', getSingleRide);
 
 function getSingleRide() {
     let id = document.getElementById('promo_key').value;
+    console.log("Value entered  : ",id)
     fetch('https://tuvuge-app.herokuapp.com/api/v1/rides/' + id,
         {
             method: 'GET',
@@ -18,8 +19,13 @@ function getSingleRide() {
                 alert("Your session has expired. Try logging in again");
                 window.location.href = "Passenger_accounts.html";
             }
-           // console.log(res.json())
-           // return res.json();
+
+            if (res.status == '200'){
+                console.log("Working well.");
+                return res.json();
+            }
+            console.log("output : ",res.json())
+            
         })
 
         .then((data) => {
@@ -31,9 +37,9 @@ function getSingleRide() {
 
             let output = `
             <div class="container">
-                <h4><b>Driver: Serunjoji Abdallah</b></h4>
-                <p>Estimated Price : ~ (4000-5500) <i>ugx</i> </p>
-                <p>Car Plate : UAE 345T</p>
+                <h4><b>Driver: ${obj_two.driver}</b></h4>
+                <p>Estimated Price : ~ ${obj_two.price} <i>ugx</i> </p>
+               
                 <hr/>
                 <button><i class="fa fa-edit"> Request</i></button>
             </div>
